@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Holiday Destinations</title>
+    <style>
+
+  
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #488eb6;
+    text-align: center;
+    padding: 1rem;
+ 
+    border-radius: 5%;
+
+  }
+  .review-container {
+    display: flex;
+
+ flex-wrap: wrap;
+    justify-content: center;
+  }
+  .review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(78, 170, 206, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    width: 300px;
+  }
+  .review-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+.review-content {
+    padding: 1rem;
+  }
+  .reviewer {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: rgb(55, 185, 142);
+  }
+
+
+
+        .image{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZP7vs5TuxSP79ap8mXVVn8WJumHgJDMHs7Q&usqp=CAU);
+            position:center;
+            background-position: center;
+            background-size :cover;
+            border-radius: 5%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .destination-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .destination-item {
+            flex: calc(25% - 20px);
+        }
+        .destination-img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 40px;
+        }
+        .destination-caption {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .destination-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .image-container {
+            position: relative;
+            max-width: 100%; /* Adjust this as needed */
+            margin-left: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+            height: 400px;  /* Hide any overflowing content */
+        }
+        .one{
+            width: 100%;
+            height: 100%;
+           
+            border-radius: 5%;
+        }
+        .image-text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: left;
+            color: rgb(8, 8, 8);
+            
+
+  font-size: 24px;
+        }
+        
+        .options-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .option {
+            text-align: center;
+            color: rgb(204, 60, 218);
+        }
+        .option img{
+            border-radius: 50%;
+        }
+
+   .option-icon {
+            width: 175px;
+            height: 175px;
+            margin-bottom: 10px;
+        }
+
+       
+      
+    </style>
+</head>
+<body>
+    <div>
+    <div class="container image">
+        <h1><i>Top Holiday Destinations</i></h1>
+        <div class="destination-list">
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZvoW_y9uAAxXxU2wGHZFsDwoQFnoECBoQAQ&url=https%3A%2F%2Fwww.holidify.com%2Fstate%2Fhimachal-pradesh%2Ftop-destinations-places-to-visit.html&usg=AOvVaw17q80NfNAQTAEVyYsg33jI&opi=89978449" class="destination-link" target="_blank">
+                    <img src="himachal.png" alt="Destination 1" class="destination-img" >
+                    <div class="destination-caption">Himachal</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjT17bD0duAAxWFSWwGHYJACzwQFnoECB0QAQ&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fgoa%2F&usg=AOvVaw2N3DdX20VpPCGY-0cLvzZq&opi=89978449" class="destination-link" target="_blank">
+                    <img src="goa.jpg" alt="Destination 2" class="destination-img">
+                    <div class="destination-caption">Goa</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjsx8eA0tuAAxWzcmwGHRFoCO8QFnoECC4QAQ&url=https%3A%2F%2Fwww.holidify.com%2Fstate%2Fjammu-and-kashmir%2F&usg=AOvVaw1VMdLkMank3Q8UBD2DPspx&opi=89978449" class="destination-link" target="_blank">
+                    <img src="Kashmir.jpg" alt="Destination 3" class="destination-img ">
+                    <div class="destination-caption">Kashmir</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="" class="destination-link" target="_blank">
+                    <img src="Northeast.png" alt="Destination 4" class="destination-img">
+                    <div class="destination-caption">Northeast</div>
+                </a>
+            </div>
+            <!-- Second row of images -->
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjSl8nMzduAAxX9a2wGHYIZCg8QFnoECBsQAQ&url=https%3A%2F%2Ftraveltriangle.com%2Fblog%2Fplaces-to-visit-in-maldives%2F&usg=AOvVaw3Ebs7sYbvNs6NQgOa8ftiq&opi=89978449" class="destination-link" target="_blank">
+                    <img src="Maldives.png" alt="Destination 5" class="destination-img">
+                    <div class="destination-caption">Maldives</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjps6OMz9uAAxWkTGwGHb0_C0IQFnoECCMQAQ&url=https%3A%2F%2Fwww.tripadvisor.in%2FAttractions-g188045-Activities-Switzerland.html&usg=AOvVaw2OiFRoHHA6KKl0O5gblGa_&opi=89978449" class="destination-link" target="_blank">
+                    <img src="Switzerland.png" alt="Destination 6" class="destination-img">
+                    <div class="destination-caption">Switzerland</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj55Ouc0tuAAxVNSmwGHRYxBX8QFnoECBsQAw&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fdubai%2Fsightseeing-and-things-to-do.html&usg=AOvVaw2IhnWQcaYNaIwQvFq6udR5&opi=89978449" class="destination-link" target="_blank">
+                    <img src="Dubai.png" alt="Destination 7" class="destination-img">
+                    <div class="destination-caption">Dubai</div>
+                </a>
+            </div>
+            <div class="destination-item">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjB-7eL0duAAxWWXWwGHfw2B2oQFnoECDEQAQ&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fmanali%2Fsightseeing-and-things-to-do.html&usg=AOvVaw2xoqe7iq3Igxg12Gy0Su3-&opi=89978449" class="destination-link" target="_blank">
+                    <img src="Srilanka.png" alt="Destination 8" class="destination-img">
+                    <div class="destination-caption">Manali</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="image-container md-5 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZP7vs5TuxSP79ap8mXVVn8WJumHgJDMHs7Q&usqp=CAU" alt="Travel Image" class="one">
+            <div class="image-text"><h4><i>Advantages with Tick It</i></h4></div>
+            <div class="options-overlay">
+                <div class="option">
+                    <img src="vishnu2.jpeg" alt="Cab Icon" class="option-icon rounded-pill">
+                    <div>Go throgh exciting offers by booking cabs <br> through TICKIT </div>
+                </div>
+                <div class="option">
+                    <img src="bus3.jpeg" alt="Bus Icon" class="option-icon rounded-pill">
+                    <div >Book your most comfortable and for happy journey <br> book your buses through TICKIT</div>
+                </div>
+                <div class="option">
+                    <img src="HOTEL2.jpeg" alt="Hotel Icon" class="option-icon rounded-pill">
+                    <div >hurry up!book your hotels for best prices</div>
+                </div>
+            </div>
+        </div>
+
+
+        <header>
+            <h1>Customer Reviews</h1>
+          </header>
+          <div class="review-container">
+            <div class="review-card">
+              <img src="s2.jpeg" alt="Customer Photo">
+              <div class="review-content">
+                <p>Great experience with the hotel bookings. It was helpful to book tickets easily.</p>
+                <p class="reviewer">- Venkatesh</p>
+              </div>
+            </div>
+            <div class="review-card ">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIIAwwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xAA5EAABAwIEAwQHBwQDAAAAAAABAAIDBBEFEiExBkFRE2FxkRQVIjJCgaEHI0NiscHRM1JT4YKi8P/EABkBAAMBAQEAAAAAAAAAAAAAAAABBAMCBf/EACARAAICAgMBAQEBAAAAAAAAAAABAhEDIRITMQQyQSL/2gAMAwEAAhEDEQA/APTw1ODU3tox8QTTVwjS481XyIKDgLoCCyqidsR5qQxzXbEIsVHLLtk+y6GosdDAF2yfZdARYUDsu2RMqHUzw0sD56mRkUMYu57joEuQUKyWU9F5txB9oNRKXx4KOwi1DZnC73d4B0A+qwFbxBiM0jjJX1MhO5fM63ldZvKk6KY/NJq2fRACRb3FfPFJiWJaOhq5sw6SELTYVx3jlC9rKh/pMexZLYnz3+q570dP5JVpnsFkrKjwDizD8aa1od2FQdOzedz3Hr3bq/y2Wqmn4TSg4umDsuWRCFyy7s5BkJpCKQmkJ2FAiE0hFITSErFQEhMIRyEwhFgBskn2XUcgPO38RVjzpYfNB9aVjjcylV7RZEBCkcmXcEWdPi9VEbl5d4laHDuIWuIEhynoVjmlPaUKVHLgmepUuIxygahTRI1wuCvLaSunpyCx5I6FXlDxHraU5Voshk8bXhtx4roVTR4rHKAQ8FWccrX7FaWmZ0G5fqvIftQ4gqZ6ptDG7LSBuZrAff73D9AvWZ5Y4qeSWVwbG1pLieQtqvn/AB+f1litTVBoa2R5LG9G8lnN0jXDG5EGCUukAftoPkuy4PM4ucz3SdOat8Nwxr7FwWmpqABlg3RSSbR6caapnmMsFTRuzvMjbH4bhXtBJFidPY2EzR7/APK2NTgEVXEWuAHgFia3DpcAxFszCRHm16WXHJSO1GnosIhPSuD4tHjQtJ0NuX+16dwTxH6xibSVbyZg0mN7t3gbtPePqFgzGCW2GkjczD0I5ft5JUsrqKvjlieWl9ntI+Fw2KWPK4sM2FZI0ez2XCFS0PEENXSRzEhryLPb0dzRJMahDb5wvQU0eM4NOmWjtEF8zG7lZiv4ohYCA+56LP1fEtRLfshp1JSeRIag2bybEImfEFEdjMI+MLzWpxOqlcc0pA7lBknlP4r/ADXPYzvqs9W9cwf3tTxisLviavIu3lH4jvNObW1Lfxn+afNh0nrnrGLqPNJeT+sar/O/zSS7A6SSE9rUxjkZpWTZuOATgEmp7RdKwOhLdJ4smtv0KYiRBPNCfu32HRXVBj8sVhMCfBUAK7nsuuTRy4plzxpxQDgr4IC0NkFnm+tui8voJjVVgza3Pl3Kx4rqxoy+3JUmDyFuIwsvq4knyQ5Wa44cUb+iaAxoV5SAkLN0s0g1igfJ1sVY0WORCbspYZY3/mWGQph4aJgsFn+MKRs1A9xaCQr2KoZKzMLBUfEWL07IXQFrnvPJrbrBempRUdSXYPTSfFGb3+h+oT69zWyG2wcCPAquw6TtMNkZlLA150O9tf5Uiuf7MZ0/o38h/oor/R3eixEpdCC0kEjXVBMkjtC9x+agUlTo0X+Mj9lY25qiD0Q5orlYFwsuX0TnlCcV2ZAZN0N2yK4JjgCL3TsYO2iaR0TwNE0EXXNjoHqkiJI5BRfil/KiMpvyqVcdV0OVHUiftYxlN+VHipb8rJMejskS6kHaxjqMHcJzaDRSGPKOx10dSF2lY+gdfQKLWQejU75ngANC0IF+Sz/FspbCyBu/vO8P/FKUElZ3CfKVHmeKVgklk0zOaSbnkU3huPtMSY8676qHVNvFI88zfzKsOFGO7aOVvuhxa4FZFRpMQlxGNzY6T7tvOT+Au0tNXyUvaVda2RxPMG4HW/VaahbFK0ZmgnvXMSYxrfd57BJy3Roo6sm4Fd+DHM372299liOJWYhDLJ6PVGMh24HvDyW7wYsFJYysaeYuomN0DZ6Zz2gB7RqFinxyGyjcTD4C+Z+HzGY5pGnM49Uevk+7h11yOb5E/wArmFFsdVLA/wDEDv2UXEzkBaSfZcR5j/Q80n+2OqiQ6ersGXOudy39HTNno4pAB7TQV5e3M+VkYNj2mW/iV6hwhN29A6nkFpYXFrgeR5reEbJM0qVjZKIAH2VAqISw6NK1clPcKHLQh262WJkvcjLviJGxSFPdvulaI0ICYaRN4gWVFAKUkbLjaEnkr4UwHJIQW5Ll4mdLLEo/Qj3rivOx7kkupnXbEN6P3FdFP4qYugBU0RciOynHepEdOERoRmI4hyFHTtUlkICawo7CnxFY5sIssTxwRDJI7mYrDVblpWY43w99VSGVgBs32uumt1xOP+TTDKp7PIcYtHBkHW3ko2BVktLXQMY/LHJK0PaQNdUXHM2do5AfXmqxmZsjXNNnNIcD0I2UyRc3s9lw6SxHii4nTSVIaY3WKp8Fr2VdJDUtBAcNR0PNTsQZUTva6nqzHGd2tZchcP02i7VEvCcDLYxDI5wieDfUlXU1G2npmxsJc1rbXcbkrO01HMCB61eB07LX9VZiOthZmmre1Y3k6KxI8brCfpQo8V6YHGJPRK50o0yOzfLn9Cm1kzaqN4aRntb57gqNxZUsdX9m347tA8Rp+yrIZiySPU2cch/ULStJmbnujhF3tMe7/o4LefZ9US1VRJO4WOjZNdzY6/8AULFPjHbHTc5gtr9nEEvb1dQ72YiGgt55hff5FbYv0TfRqDZunAWQXgIrihOKtPKAvahFoRXFDcUDBloTC0IhKYSgBuULi7dJMAwK6ChZk7MgQYFFYVGaUVrkAS2FFa5RWORWuQBLa5clayWNzJGhzXbgoLXIgcEqCzB8QfZ+2rqe1oHtyOdd0bzsoUv2ePihMrTFnjbowDR3ieq9JK5mHO3eueuJr3TPLsNpDhlK2nDicpJ1FtCbq3oqwNf7f1Q8Te2Wtmey2XObeChuGiknFHoY3aRs6Opo3tBdlCqeKsfpaCBwDgXn3Wt3cs1VTSRwlzHuFuhWXry+Z7nkl7juTe6w4K9lPLWivnqJayv7eTe9wOilOH9MN1JkLvIW/dDp6ch+Zw02CmwNtKZXDYWaF22v4ZxX9ZIecj2gD2gznyW6+zqCSKhqZH3yvfoTueqo+FuHXYrO6rqDlp2nKCDq8/wvQ4IYqWFsMDAyNuwCo+fG/wBMl+rKq4IK4oTik9yE5yqPPE4oTiuuKG5yAESmErhcmFyBjrpIeZJOgH5k4PUcOTsydCJLXojXKIHd6I1yKAmNcitfoq+SpjgjMs0jY42i5c42AWXxXjpkTjFhsQfbQyybfJv8pDUWzetcoGI8Q4XhlxWVsLHgX7MOu/yGq8or+IMUrnEzVkuU/A12VvkFUvu4kncpNmiws9JrftLo2tLaGinkdsHSkNb+5T4uIK/EaYSSmOJkgvkiGw6X3XmGQ81q+EqwSxmhkNnt1j7x0+S4m9GsccbLktzEldLLBTBTFEFKXC1lJJlcUUs0GcEclDGDOqPZFx+i07aK5sRorCkpAwAW+izk9G0bMdBwzKZQ2U5fzbqypeBKNzO0xGqkmcTezfYaB0WvZA3RSBE3LawKcJxX8OMinLSdEWjhgpKWOnpWNbDGLNDURz1ErMAoqwG8b4X/AOSB5jd9FkMYZj/D0juyxKSrpGEX7ZoztHjzVcM8Xohn8sls2rn96G56xtHxjK0hldA14vYviNj5LSU9ZFVwNmgeHMdzW9E7i16SXPQy9Dc9ML0xBC9ML0IvTC5FAGzpKPnSTCggfqnB6ih+qIHIHRID0Rr1EzqPilX6Jh1RMDYtYcvjsEBRlOK8XNdXGGJ33ENw38x5lUACbmucxvcJxKzb2VRVI6lp1KVzy+aSR0LwRKaV9PMyWJ2WRhu1wQ7XTgLJNAj1Hh+uhxihbKywmbpKz+0/wVbshsF5NhOJz4ZVtqaY67PadnDoV6rg+KU2LUrZqd2uzmHdp6FSZYNbRTjmn6F7P2tkeNiI2MFGjjssDZHGRozWJALpNkhCtYrG8eTNhoJs3vSPDAtne2pXk/HmJem4u6nid93Cbf8ALmtsMbkZ5HSM65+WxvqTfdWuCYpJQzjX7px9pnUKlfYzNHK6cxxzK9Mkas9NEoe0OabtIuD3JpeqnAqsz0DGk3LBa6nl60JWqYUuQ3PQy5ML0BQXMkgZ11Awie1dSQA5UvGBPqbfeVv7rqSTBemGj/qfJPSSWRSJdG6SSYBG7FLkupIGc6K/4LkeziGFrHua1zyHAGwItsupLif5Z1H09Xj2RmriS88sHhN+JJJIYytJFM+xt7JXhMpLqtxcSSXHU+JSSVXz+k+XwY7+u3xXY/fC4kqTA0vCvuyjlp+pV8UklsvCaXowobkkkCGriSSYz//Z" alt="Customer Photo">
+                <div class="review-content">
+                  <p>It was an honour to to book through this site</p>
+                  <p class="reviewer">- Alexa</p>
+                </div>
+              </div>
+           
+        
+          <div class="review-card ">
+              <img src="s3.jpeg" alt="Customer Photo">
+              <div class="review-content">
+                <p>since we are facing some problems need to improve the page for more features</p>
+                <p class="reviewer">- Thomson</p>
+              </div>
+            </div>
+            <div class="review-card ">
+                <img src="s4.jpeg" alt="Customer Photo">
+                <div class="review-content">
+                  <p>Smooth bus journey. Arrived on time at my destination.</p>
+                  <p class="reviewer">- Michael Johnson</p>
+                </div>
+              </div>
+              <div class="review-card ">
+                <img src="s7.jpeg" alt="Customer Photo">
+                <div class="review-content">
+                  <p>great experiencet .</p>
+                  <p class="reviewer">- Johnson</p>
+                </div>
+              </div>
+              <div class="review-card ">
+                <img src="s8.jpeg" alt="Customer Photo">
+                <div class="review-content">
+                  <p>It was good on booking through this sight</p>
+                  <p class="reviewer">- </p>
+                </div>
+              </div>
+          </div>
+    
+
+
+
+     
+
+
+
+
+
+
+
+
+
+        <div style="text-align: center; padding: 20px;" style="background-color: aqua;">
+            <footer>
+                <h4>Follow us on social media</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/YourPage" target="_blank">
+                        <img src="facebook-icon.png" alt="Facebook" width="70px" height="70px" style="margin-right: 40px;">
+                    </a>
+                    <a href="https://www.twitter.com/YourPage" target="_blank">
+                        <img src="twitter-icon.png" alt="Twitter" width="70px" height="70px" style="margin-right: 40px;">
+                    </a>
+                    <a href="https://www.instagram.com/YourPage" target="_blank">
+                        <img src="instagram-icon.jpeg" alt="Instagram" width="70px" height="70px">
+                    </a>
+                </div>
+                <p>&copy; 2023 YourWebsite.com. All rights reserved.</p>
+            </footer>
+        </div>
+        
+    </div>
+
+       
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+      
+      
+      
+      
+</body>
+</html>

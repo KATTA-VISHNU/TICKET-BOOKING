@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Signup Modal</title>
+<style>
+  /* Styles for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(246, 248, 252, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #90b5df;
+    width: 600px; /* Increased width */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Modal with Navbar and Signup and Login Links -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="navbar">
+        <a href="#" id="loginLink">Login</a>
+        <a href="#" id="signupLink">Signup</a>
+    </div>
+    <div id="signupModal" style="display: none;">
+      <h2>Signup</h2>
+      <form>
+        <div class="form-row">
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-row">
+          <label for="signupFirstName">First Name:</label>
+          <input type="text" id="signupFirstName" placeholder="Enter your first name">
+          <label for="signupLastName">Last Name:</label>
+          <input type="text" id="signupLastName" placeholder="Enter your last name">
+        </div>
+        <div class="form-row">
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" placeholder="Enter your password">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm your password">
+        </div>
+        <div class="form-row">
+          <button type="submit" id="signup">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div id="loginModal">
+      <h2>Login</h2>
+      <form>
+        <div class="form-row">
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" placeholder="Enter your username">
+        </div>
+        <div class="form-row">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+        </div>
+        <div class="form-row">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class="form-row">
+          <button type="submit" id="signin">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const myModal = document.getElementById('myModal');
+  const loginLink = document.getElementById('loginLink');
+  const signupLink = document.getElementById('signupLink');
+  const loginModal = document.getElementById('loginModal');
+  const signupModal = document.getElementById('signupModal');
+  const signup = document.getElementById('signup');
+  const signin = document.getElementById('signin');
+
+  // Show the modal by default
+  myModal.style.display = 'flex';
+
+  signupLink.addEventListener('click', () => {
+    signupModal.style.display = 'block';
+    loginModal.style.display = 'none';
+  });
+
+loginLink.addEventListener('click', () => {
+    loginModal.style.display = 'block';
+    signupModal.style.display = 'none';
+  });
+
+  // Handle form submission for signup
+  signup.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission
+
+    // Replace with actual signup logic
+    const email = document.querySelector('#signupModal input[type="email"]').value;
+    const firstName = document.querySelector('#signupModal input[name="first-name"]').value;
+    const lastName = document.querySelector('#signupModal input[name="last-name"]').value;
+    const password = document.querySelector('#signupModal input[type="password"]').value;
+
+    // Simulate successful signup
+    alert('Signup successful!');
+
+    // After successful signup, open project2.html
+    window.location.assign('project2.html');
+  });
+
+  // Handle form submission for login
+  signin.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission
+
+ // Replace with actual login logic
+    const username = document.querySelector('#loginModal input[type="text"]').value;
+    const password = document.querySelector('#loginModal input[type="password"]').value;
+
+    // Simulate successful login
+    alert('Login successful!');
+
+    // After successful login, open project2.html
+    window.location.assign('project2.html');
+  });
+</script>
+</body>
+</html>

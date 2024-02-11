@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROJECT 2</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add custom CSS for logos -->
+  <style>
+	
+
+	.one{
+		text-decoration: solid;
+	}
+
+
+
+
+
+
+	
+	.card {
+		width: 300px;
+		padding: 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		margin: 0 auto;
+	}
+	.form-field {
+		margin-bottom: 15px;
+	}
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+	input[type="text"],
+	input[type="date"] {
+		width: 100%;
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	/* Additional CSS for carousel styling */
+	
+/* Custom styles for smaller form elements */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"] {
+height: 30px;
+font-size: 14px;
+}
+.form-group label {
+font-size: 12px;
+}
+.btn {
+font-size: 14px;
+padding: 8px 16px;
+}
+
+.navbar {
+	box-shadow: inset 0 0 10px 0 rgba(25, 148, 185, 0.9),0 0 10px 0 rgba(0,0,0,0.9);
+    height: 100px; /* Decreased height */
+    
+  }
+	.nav-item img {
+	  max-width: 30px;
+	  max-height: 30px;
+	  margin-right: 5px;
+	}
+	.navbar-brand img {
+		max-width: 150px;
+		max-height: 95px;
+		margin-right: 50px;
+		border-radius: 50px;
+
+
+	}
+	hr {
+		border: none;
+		border-top: 2px solid rgb(18, 18, 134);
+
+	  }	
+        .nav-item:hover .nav-link {
+            color: #1722b8 !important; /* Change to bg-info color */
+			 font-size: 1.5em; /* Change font size on hover */
+        }
+
+  
+	 
+  </style>
+</head>
+<body>
+<section>
+	
+	
+<nav class="navbar navbar-expand-lg navbar-expand-md">
+  <div class="container">
+	<a class="navbar-brand" href="#"><img src="tickitbrand.jpg" >
+	TICK IT</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav ml-auto">
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#hotel" onclick="showhotels()">
+			  <img src="HOTEL.png" alt="Hotels Logo">
+
+			  Hotels
+			</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#bus" onclick="showbuses()">
+			  <img src="bus2.png" alt="Bus Logo">
+			  Bus
+			</a>
+		  </li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#cab" onclick="showcabs()" >
+			  <img src="cab.png" alt="Cabs Logo">
+			  Cabs
+			</a>
+		  </li>
+		 
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html" >
+				<img src="w21.jpg" alt="man Logo">
+			About
+			</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" href="vishnu1.html" >
+			  <button type="submit" name="submit" class="btn btn-outline-success" >Log In</button>
+			
+			</a>
+		  </li>
+		
+	  </ul>
+	</div>
+  </div>
+</nav>			<hr>
+<div id="cab" class="carousel slide" data-ride="carousel" style="display: none;">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="cabimage.jpg" class="d-block w-100" alt="Single Image">
+			<div class="carousel-caption d-none d-md-block">
+				<button class="btn btn-primary" id="bookCabButton">Book Your Cab</button>
+			</div>
+		</div>
+	</div>
+	
+	<h1 class="secondary">Aha Taxis Terms & Conditions</h1>
+	
+    <ul>
+        <li>No need to pay Toll Tax, State Tax or other similar taxes to the driver (for all-inclusive bookings)</li>
+        <li>Parking charges, Airport Entry Charges, if applicable, are excluded and will have to be paid directly to the driver</li>
+        <li>Once you exceed the km limit for your trip, you shall be charged at Rs.10/km</li>
+        <li>Between 09:00 PM to 6:00 AM, an additional night charge (Rs.250/night) will be applicable. These charges to be paid directly to the driver</li>
+        <li>Waiting charges would be applicable after the cab reaches the boarding point. The first 15 minutes are free but post that the charge is Rs.2 per minute and this amount has to be paid to the driver directly.</li>
+        <li>In case of partial payment, the balance payment of trip needs to be paid in advance at the time of pick-up</li>
+        <li>You need to collect the receipts from driver for any toll tax, state tax, night charges or extra km paid directly to the driver during the trip. AHA is not liable to provide invoices for such amount</li>
+        <li>Any grievances or claims related to the cab travel should be reported to AHA within 24 hours of travel time</li>
+        <li>The booking will be for cab type SEDAN and we do not commit on providing any preferred cab model (Dzire, Etios or similar)</li>
+        <li>AC will be switched off in hilly areas</li>
+        <li>You can accommodate 1 bag in Hatchback, 2 bags in Sedan and 3 bags in SUV</li>
+        <li>We do not commit on particular fuel type vehicle like Petrol, Diesel or CNG.Cab will be provided on the basis of availability.</li>
+        <li>You are not allowed to take pets with you inside the cab</li>
+        <li>Due to traffic or any other unavoidable reason, pickup may be delayed by 30 mins</li>
+        <li>Driver details will be shared up to 2 hour prior to departure.</li>
+        <li>You are solely responsible for managing your own travel schedule. AHA Taxis will not be liable for any compensation</li>
+    </ul>
+	<div class="one">
+    <h1>Aha Cancellation Policy</h1>
+    <ul>
+        <li>Free cancellation till 24 hours before departure</li>
+        <li>AHA Taxis (AHA) will not be held responsible for any cancellation or delay of service in case of any natural calamity, agitation or strike, traffic jam or road blockage, etc.</li>
+        <li>AHA reserves the right to cancel or change the booking of a vehicle at any point</li>
+        <li>Any modifications/amendments to the booking are not allowed</li>
+        <li>In the event of cancellation of a cab trip, AHA's liability will be limited only to the extent of refunding the sum paid by the passenger for the price of the e-ticket</li>
+    </ul>
+
+    <h1>Via.com Terms & Conditions</h1>
+    <ul>
+        <li>All cab booking related queries will be handled by AHA Taxis</li>
+        <li>Any legal issues raised for cab booking will be handled by AHA taxis</li>
+        <li>Via.com is not responsible for any booking related issues.</li>
+        <li>Terms and conditions of Via.com will be applicable</li>
+        <li>Flat 7% discount on cab booking on AHA taxis. Use Code AHAVIA</li>
+    </ul>
+	
+	
+	</div>
+</div>
+
+
+  
+  
+
+<div id="hotel" class="carousel slide size" data-ride="carousel"  >
+	
+	<!-- Indicators -->
+	<ul class="carousel-indicators">
+	<li data-target="#hotel" data-slide-to="0" class="active"></li>
+	<li data-target="#hotel" data-slide-to="1"></li>
+	<li data-target="#hotel" data-slide-to="2"></li>
+	</ul>
+	
+	<!-- Slides -->
+	<div class="carousel-inner">
+	<div class="carousel-item active">
+	<img src="https://images.via.com/static/img/emailers/agent/2023/Hotel/Hotel_Shilton.jpeg" alt="Image 1">
+	<div class="carousel-caption">
+	<div class="row">
+	<div class="col-6">
+	<div class="container mt-5">
+	<form  method="POST">
+	<div class="form-group">
+	<b align="center">Destination</b>
+	<input type="text" class="form-control" id="destination" name="destination" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Enter City,Area or Hotel Name" required>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="checkin">Check-in</label>
+	<input type="date" class="form-control" name="checkin" id="checkin1"  required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="checkout">Check-out</label>
+	<input type="date" class="form-control" name="checkout" id="checkout1" required>
+	<span id="checkouterror">checkout</span>
+	</div>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="rooms">Rooms</label>
+	<input type="number" class="form-control" name="rooms" id="rooms" min="1" pattern="^[0-9]{1,2}$" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="guests">Guests</label>
+	<input type="number" class="form-control" name="guests" id="guests" min="1" pattern="^[0-9]{1,2}$" required>
+	</div>
+	</div>
+	
+	<div class="form-group">
+	<label for="nationality">Nationality</label>
+	<input type="text" class="form-control" name="nationality" id="nationality" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Nationality" required>
+	</div>
+	<div class="form-group">
+	<label for="residence">Residence</label>
+	<input type="text" class="form-control" name="residence" id="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+	</div>
+	<button type="submit" class="btn btn-primary" onclick="compareDates()">Search hotel</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	
+	
+	</div>
+	</div>
+	<div class="carousel-item">
+		<img src="https://images.via.com/static/img/emailers/agent/2023/Hotel/The_Fern_Residency_Jaipur-b2b.jpeg" alt="Image 2">
+		<div class="carousel-caption">
+		<div class="row">
+		<div class="col-6">
+		<div class="container mt-5">
+		<form action="hotel2.php" method="POST">
+		<div class="form-group">
+		<b align="center">Destination</b>
+		<input type="text" class="form-control" id="destination" name="destination" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Enter City,Area or Hotel Name" required>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		<label for="checkin">Check-in</label>
+		<input type="date" class="form-control" name="checkin" id="checkin" pattern="^[0-9]{1,2}$" required>
+		
+		</div>
+		<div class="form-group col-md-6">
+		<label for="checkout">Check-out</label>
+		<input type="date" class="form-control" name="checkout" id="checkout" pattern="^[0-9]{1,2}$" required>
+		
+		</div>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		<label for="rooms">Rooms</label>
+		<input type="number" class="form-control" name="rooms" id="rooms" min="1" required>
+		</div>
+		<div class="form-group col-md-6">
+		<label for="guests">Guests</label>
+		<input type="number" class="form-control" name="guests" id="guests" min="1" required>
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="nationality">Nationality</label>
+		<input type="text" class="form-control" name="nationality" id="nationality" pattern="^[A-Za-z\s]{3,50}$" placeholder="Nationality" required>
+		</div>
+		<div class="form-group">
+		<label for="residence">Residence</label>
+		<input type="text" class="form-control" name="residence" id="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+		</div>
+		<button type="submit" class="btn btn-primary">Search hotel</button>
+		</form>
+		</div>
+		</div>
+		</div>
+		
+		
+		</div>
+		</div>
+		
+	
+	<div class="carousel-item">
+	<img src="https://images.via.com/static/img/emailers/agent/2023/Hotel/Hotel_Shilton.jpeg" alt="Image 3">
+	<div class="carousel-caption">
+	<div class="row">
+	<div class="col-6">
+	<div class="container mt-5">
+	<form action="hotel2.php" method="POST" >
+	<div class="form-group">
+	<b align="center">Destination</b>
+	<input type="text" class="form-control" id="destination" name="destination"  placeholder="Enter City,Area or Hotel Name" pattern="^[A-Za-z\s]{3,50}$" required>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="checkin">Check-in</label>
+	<input type="date" class="form-control" id="checkin" name="checkin" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="checkout">Check-out</label>
+	<input type="date" class="form-control" id="checkout" name="checkout" required>
+	
+	</div>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="rooms">Rooms</label>
+	<input type="number" class="form-control" id="rooms" name="rooms" min="1" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="guests">Guests</label>
+	<input type="number" class="form-control" id="guests" name="guests" min="1" required>
+	</div>
+	</div>
+	
+	<div class="form-group">
+	<label for="nationality">Nationality</label>
+	<input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality" pattern="^[A-Za-z\s]{3,50}$" required>
+	</div>
+	<div class="form-group">
+	<label for="residence">Residence</label>
+	<input type="text" class="form-control" id="residence" name="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+	</div>
+	<button type="submit" class="btn btn-primary">Search hotel</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<!-- Controls -->
+	<a class="carousel-control-prev" href="#hotel" role="button" data-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#hotel" role="button" data-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+	</a>
+	</div>
+	
+	
+	
+	
+
+
+
+	  <div id="bus" class="carousel slide" data-ride="carousel"  style="display: none;">
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+		  <li data-target="#bus" data-slide-to="0" class="active"></li>
+		  <li data-target="#bus" data-slide-to="1"></li>
+		  <li data-target="#bus" data-slide-to="2"></li>
+		</ul>
+
+
+
+
+
+
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="https://images.via.com/static/img/general/Tirupati-Balaji-Darshan-B2C-Banner.jpeg" alt="Image 1">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php">
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" pattern="[A-Z a-z \s]+" placeholder="Enter your name" required >
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" pattern="[A-Z a-z\- 0-9 \s]+" placeholder="Enter your address" required>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+"  required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations"list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)">
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="https://images.via.com/static/img/general/Flat_off_Bus.jpeg"  alt="Image 2">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php" >
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" pattern="[A-Z a-z \s]+" requird>
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" pattern="[A-Z a-z\- 0-9 \s]+" reqired>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations" list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)" required>
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="https://images.via.com/static/img/general/Flat_off_Bus.jpeg"  alt="Image 3">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php" >
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" pattern="[A-Z a-z \s]+">
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" pattern="[A-Z a-z\- 0-9 \s]+" required>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations"list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)">
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+		  </div>
+		  <a class="carousel-control-prev" href="#bus" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#bus" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+	  
+	<div style="margin-bottom: 20px;">
+	
+		<iframe src="destinations.html" width="100%" height="600" frameborder="0"></iframe>
+		
+
+	</div>
+	
+	
+
+	
+		
+
+	
+
+
+
+		
+		
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+
+  
+  <script>
+	checkinDateStr=document.getElementById("checkin1");
+	checkoutDateStr=document.getElementById("checkout1");
+	error=document.getElementById("checkouterror");
+	
+	function compareDates(checkinDateStr, checkoutDateStr) {
+		
+	console.log(checkinDateStr.value);
+		const checkinDate = new Date(checkinDateStr);
+		const checkoutDate = new Date(checkoutDateStr);
+		const error	=document.getElementById(checkouterror);
+		if (checkinDate < checkoutDate) {
+			error.innerText="please enter valid out date";
+		} 
+	}
+	
+	
+	
+
+	
+
+	</script>
+
+
+	
+  <script>
+	// Enable auto-sliding for the carousel
+	$(document).ready(function(){
+	$('#cab').carousel({
+	interval: 3000 // Change the time (in milliseconds) between slides
+	});
+	});
+	</script>
+	<script>
+		// Enable auto-sliding for the carousel
+		$(document).ready(function(){
+		$('#hotel').carousel({
+		interval: 3000 // Change the time (in milliseconds) between slides
+		});
+		});
+		</script>
+		<script>
+			// Enable auto-sliding for the carousel
+			$(document).ready(function(){
+			$('#bus').carousel({
+			interval: 3000 // Change the time (in milliseconds) between slides
+			});
+			});
+			</script>
+<script>
+	
+
+function showcabs() {
+	document.getElementById('cab').style.display = 'block';
+	document.getElementById('hotel').style.display = 'none';
+	document.getElementById('bus').style.display = 'none';
+
+
+}
+function showhotels() {
+	document.getElementById('cab').style.display = 'none';
+	document.getElementById('hotel').style.display = 'block';
+	document.getElementById('bus').style.display = 'none';
+
+
+}
+function showbuses() {
+	document.getElementById('cab').style.display = 'none';
+	document.getElementById('hotel').style.display = 'none';
+	document.getElementById('bus').style.display = 'block';
+
+
+}
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const bookCabButton = document.getElementById("bookCabButton");
+
+		bookCabButton.addEventListener("click", function() {
+			// Open a new window/tab with the card-style form
+			//const newWindow = window.open("");
+			//const formContent = document.getElementById("formCard").innerHTML;
+			//newWindow.document.write(formContent);
+
+			window.location.assign("project2sub1.php");
+		});
+	});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

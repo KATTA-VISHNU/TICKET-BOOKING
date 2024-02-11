@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>
+            Tick It
+    </title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            color: black;
+            background: gray;
+        }
+        .mobile{
+            height: 95vh;
+            width: 400px;
+            background-size: cover;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .content{
+            padding: 30px;
+            padding-top: 20px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .content input{
+            background: transparent;
+            border: 2px solid black;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            height: 30px;
+            margin-top: 20px;
+
+            
+        }
+        .content input:hover{
+          
+          
+        }
+        #login{
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(112, 247, 202),rgb(103, 148, 216),rgb(30, 73, 153));
+            display: block;
+            width: 120px;
+            color: black;
+            padding: 5px;
+        }
+        #login:hover{
+            border-radius: 10px;
+            background: linear-gradient(rgb(121, 224, 228),rgb(198, 101, 218));
+            display: block;
+            width: 120px;
+            padding: 5px;
+            color: black;
+            cursor: pointer;
+        }
+        .x{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .y{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .z a{
+            color: black;
+            font-size: 18px;
+            padding-top: 30px;
+        }
+        .y a{
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="mobile">
+            <div class="content">
+            <center><h1 style="color: rgb(193, 100, 236); font-size:50px;">Login</h1></center><br>
+            <form action="log.php" method="post">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                <label for="name"><i class="fa-solid fa-user" style="font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: 20px; font-weight: 700; color: black;">User Name</span></label>
+                <span id="name_e"></span>
+              </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                <label for="email"><i class="fa-regular fa-envelope" style="font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-size: 20px; font-weight: 700; color: black;">Email Address</span></label>
+                <span id="email_e"></span>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                <label for="password"><i class="fa-solid fa-lock" style="font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-size: 20px; font-weight: 700; color: black;">password</span></label>
+                <span id="password_e"></span>
+            </div>
+            <br>
+              <div class="z">
+                <a href="vishnu3.html" style="margin-top: 30px;color:brown; padding-top: 30px;">Forget password</a>   
+              </div>
+             
+              <div class="x">
+                <button type="submit" id="login">Login</button> 
+              </div>
+            </form>
+              <div class="y">
+                <!--<p>don't have an account</p>-->
+              <a href="vishnu2.html" class="ms-auto" style="color: brown;">Register </a>
+
+              </div>
+              
+        </div>
+        </div>
+    <div>
+        <script>
+            
+            function validate(){
+                var n=false;
+                var e=false;
+                var p=false;
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            var nameE=document.getElementById("name_e");
+            var emailE=document.getElementById("email_e");
+            var passE=document.getElementById("password_e");
+                
+                const pattern1=/^[a-zA-Z\s]{3,30}$/;
+                
+                let check1=pattern1.test(name);
+                if(name == ""){
+                    nameE.innerText="name required";
+                }
+                else if(name.length<3){
+                    nameE.innerText="should contain atleast 3 letters";
+                }
+                else if(check1 !=true){
+                    nameE.innerText="should contain alphabets only";
+                }
+                else{
+                    nameE.innerText="";
+                    n=true;
+                }
+                nameE.style.color="red";
+
+                const pattern2=/^[a-zA-Z0-9]+[@][a-zA-Z]+[\.][a-zA-Z]{2,4}$/;
+                var check2=pattern2.test(email);
+                
+                if(email==""){
+                    emailE.innerText="Email Required";
+                }
+                else if(check2 !=true){
+                    emailE.innerText="Invalid Email";
+                }
+                else{
+                    emailE.innerText="";
+                    e=true;
+                }
+                emailE.style.color="red";
+                 pattern3=/^[a-zA-Z]{2,10}[@][0-9]+$/;
+                 var check3 = pattern3.test(password);
+                 if(password==""){
+                    passE.innerText="Password Required";
+                 }
+                 else if(check3 !=true){
+                    passE.innerText="Inalid Password";
+                 }
+                 else{
+                    passE.innerText="";
+                    p=true;
+                 }
+                 passE.style.color="red";
+                 var f=false;
+                 if(n && e && p){
+                    f=true;
+                 }
+                 return f;
+            }
+            var form=document.querySelector("form");
+            form.addEventListener('submit',e=>{
+                if(!validate()){
+                 e.preventDefault();
+                }
+
+
+            });
+            
+            
+            
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>
+        Web-Android
+    </title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url(m10.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .mobile{
+            height: 110vh;
+            width: 380px;
+            background-image: url(m6.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            border: 2px solid rgb(241, 239, 239);
+            margin-top: 20px;
+            box-shadow: inset 0 0 20px rgb(85, 216, 194),0 0 30px #fff;
+        }
+        .content{
+            padding: 30px;
+            padding-top: 20px;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .content input{
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            height: 40px;
+           
+            margin-top: 10px;
+            box-shadow: inset 0 0 20px rgb(85, 216, 194),0 0 30px #d697d6;
+
+            
+        }
+        .content input:hover{
+          
+          
+        }
+        #login{
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(223, 91, 205),rgb(40, 189, 139));
+            display: block;
+            width: 120px;
+            color: #fff;
+            padding: 5px;
+        }
+        #login:hover{
+            border-radius: 10px;
+            background: linear-gradient(135deg,rgb(209, 212, 18),orange,rgb(243, 126, 16),rgb(236, 62, 18));
+            display: block;
+            width: 120px;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .x{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .y{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .z a{
+            color: #fff;
+            font-size: 18px;
+        }
+        .y a{
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="mobile">
+            <div class="content">
+                <div class="row">
+                    <div class="col-3">
+                          <p><i class="fa-solid fa-arrow-left" style="font-size: 28px;"></i></p>
+                    </div>
+                    <div class="col-9">
+                        <div><h1>Register</h1></div>
+                    </div>
+                </div>
+            
+            <form action="login_page.html" method="post">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                <label for="name"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; <span style=" font-weight: 700; color: white;">User Name</span></label>
+                <span id="name_e"></span>
+              </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                <label for="email"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style=" font-weight: 700; color: white;">Email Address</span></label>
+                <span id="email_e"></span>
+              </div>
+              <div class="form-floating">
+                <input type="date" class="form-control" id="date" name="date" placeholder="date">
+                <label for="date"><i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-weight: 700; color: white;">Date Of Birth</span></label>
+                <span id="date_e"></span>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="country" name="password" placeholder="country">
+                <label for="country"><i class="fa-solid fa-earth-asia"></i></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-weight: 700; color: white;">Country</span></label>
+                <span id="country_e"></span>
+            </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="password1" name="password1" placeholder="password1">
+                <label for="password1"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-weight: 700; color: white;"> Create Password</span></label>
+                <span id="password_e1"></span>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password2" name="password2" placeholder="password2">
+                <label for="password2"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span  style="font-weight: 700; color: white;">Confirm Password</span></label>
+                <span id="password_e2"></span>
+            </div>
+              <div class="x">
+                <button type="submit" id="login">Register</button> 
+              </div>
+            </form>
+              <div class="y">
+              <a href="login_page.html" class="ms-auto">login</a>
+            </div>
+              
+        </div>
+        </div>
+    <div>
+        <script>
+            
+            function validate(){
+                
+                var n=false;
+                var e=false;
+                var p1=false;
+                var p2=false;
+                var c=false;
+                var d=false;
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password1").value;
+            var date=document.getElementById("date").value;
+            var country=document.getElementById("country").value;
+            var C_password=document.getElementById("password2").value;
+            
+            var nameE=document.getElementById("name_e");
+            var emailE=document.getElementById("email_e");
+            var passE=document.getElementById("password_e1");
+            var dateE=document.getElementById("date_e");
+            var passE2=document.getElementById("password_e2");
+            var countryE=document.getElementById("country_e");
+                
+                const pattern1=/^[a-zA-Z\s]{3,30}$/;
+                
+                let check1=pattern1.test(name);
+                if(name == ""){
+                    nameE.innerText="name required";
+                }
+                else if(name.length<3){
+                    nameE.innerText="should contain atleast 3 letters";
+                }
+                else if(check1 !=true){
+                    nameE.innerText="should contain alphabets only";
+                }
+                else{
+                    nameE.innerText="";
+                    n=true;
+                }
+                nameE.style.color="red";
+
+                const pattern5=/^[a-zA-Z\s]{2,30}$/;
+                let check5=pattern5.test(country);
+                if(country == ""){
+                    countryE.innerText="name required";
+                }
+                else if(country.length<2){
+                    countryE.innerText="should contain atleast 2 letters";
+                }
+                else if(check5 !=true){
+                    countryE.innerText="should contain alphabets only";
+                }
+                else{
+                    countryE.innerText="";
+                    c=true;
+                }
+                countryE.style.color="red";
+
+                const pattern2=/^[a-zA-Z0-9]+[@][a-zA-Z]+[\.][a-zA-Z]{2,4}$/;
+                var check2=pattern2.test(email);
+                
+                if(email==""){
+                    emailE.innerText="Email Required";
+                }
+                else if(check2 !=true){
+                    emailE.innerText="Invalid Email";
+                }
+                else{
+                    emailE.innerText="";
+                    e=true;
+                }
+                emailE.style.color="red";
+                
+                pattern3=/^[a-zA-Z]{4,15}[@#]+[0-9]+$/;
+                var check3 = pattern3.test(password);
+                 if(password==""){
+                    passE.innerText="Password Required";
+                 }
+                 else if(check3 !=true){
+                    passE.innerText="Inalid Password";
+                 }
+                 else{
+                    passE.innerText="";
+                    p1=true;
+                 }
+                 passE.style.color="red";
+
+
+                
+                 var check4 = pattern3.test(C_password);
+                 if(C_password==""){
+                    passE2.innerText="Password Required";
+                 }
+                 else if(check4 !=true){
+                    passE2.innerText="Invalid Password";
+                 }
+                 else if(password != C_password){
+                    passE2.innerText="incorrect password";
+                 }
+                 else{
+                    passE2.innerText="";
+                    p2=true;
+                 }
+                 passE2.style.color="red";
+                 
+                
+                 
+                 var da=Number(date.slice(0,4));
+                 if(da==0){
+                    dateE.innerText="date required";
+                 }
+                 else if(da > 2004){
+                    dateE.innerText="invalid date";
+                 }
+                 else{
+                    dateE.innerText="";
+                    d=true;
+                 }
+                 dateE.style.color="red";
+                
+                var f=false;
+                 if(n && e && p1 && c && p2 && d){
+                    f=true;
+                 }
+                 return f;
+            }
+            var form=document.querySelector("form");
+            form.addEventListener('submit',e=>{
+               if(!validate()){
+                 e.preventDefault();
+                
+                }
+            });
+            
+            
+            
+
+        </script>
+</body>
+</html>

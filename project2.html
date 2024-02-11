@@ -1,0 +1,1104 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROJECT 2</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add custom CSS for logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+	header {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		color: #488eb6;
+		text-align: center;
+		padding: 1rem;
+	 
+		border-radius: 5%;
+	
+	  }
+	  .review-container {
+		display: flex;
+	
+	 flex-wrap: wrap;
+		justify-content: center;
+	  }
+	  .review-card {
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px rgba(78, 170, 206, 0.1);
+		margin: 1rem;
+		overflow: hidden;
+		width: 300px;
+	  }
+	  .review-card img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	  }
+	
+	.review-content {
+		padding: 1rem;
+	  }
+	  .reviewer {
+		font-weight: bold;
+		margin-top: 0.5rem;
+		color: rgb(55, 185, 142);
+	  }
+	
+	
+	
+			.image{
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZP7vs5TuxSP79ap8mXVVn8WJumHgJDMHs7Q&usqp=CAU);
+				position:center;
+				background-position: center;
+				background-size :cover;
+				border-radius: 5%;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.destination-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+			}
+			.destination-item {
+				flex: calc(25% - 20px);
+			}
+			.destination-img {
+				width: 100%;
+				height: auto;
+				border: 1px solid #ddd;
+				border-radius: 40px;
+			}
+			.destination-caption {
+				text-align: center;
+				margin-top: 5px;
+				font-weight: bold;
+			}
+			.destination-link {
+				text-decoration: none;
+				color: inherit;
+			}
+	
+			.image-container {
+				position: relative;
+				max-width: 100%; /* Adjust this as needed */
+				margin-left: 20px;
+				margin-right: 20px;
+				overflow: hidden;
+				height: 400px;  /* Hide any overflowing content */
+			}
+			.one{
+				width: 100%;
+				height: 100%;
+			   
+				border-radius: 5%;
+			}
+			.image-text {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				text-align: left;
+				color: rgb(8, 8, 8);
+				
+	
+	  font-size: 24px;
+			}
+			
+			.options-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				
+			}
+			.option {
+				text-align: center;
+				color: rgb(204, 60, 218);
+			}
+			.option img{
+				border-radius: 50%;
+			}
+	
+	   .option-icon {
+				width: 175px;
+				height: 175px;
+				margin-bottom: 10px;
+			}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	.one{
+		text-decoration: solid;
+	}
+
+
+
+
+
+
+	
+	.card {
+		width: 300px;
+		padding: 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		margin: 0 auto;
+	}
+	.form-field {
+		margin-bottom: 15px;
+	}
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+	input[type="text"],
+	input[type="date"] {
+		width: 100%;
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	/* Additional CSS for carousel styling */
+	
+/* Custom styles for smaller form elements */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"] {
+height: 30px;
+font-size: 14px;
+}
+.form-group label {
+font-size: 12px;
+}
+.btn {
+font-size: 14px;
+padding: 8px 16px;
+}
+
+.navbar {
+	box-shadow: inset 0 0 10px 0 rgba(25, 148, 185, 0.9),0 0 10px 0 rgba(0,0,0,0.9);
+    
+  }
+	.nav-item img {
+	  max-width: 30px;
+	  max-height: 30px;
+	  margin-right: 5px;
+	}
+	.navbar-brand img {
+		max-width: 150px;
+		max-height: 95px;
+		margin-right: 50px;
+		border-radius: 50px;
+
+
+	}
+	hr {
+		border: none;
+		border-top: 2px solid rgb(18, 18, 134);
+
+	  }	
+        .nav-item:hover .nav-link {
+            color: #1722b8 !important; /* Change to bg-info color */
+			 font-size: 1.5em; /* Change font size on hover */
+        }
+
+		@media screen and (max-width:624px){
+
+			.carousel-item img{
+				height: 640px;
+			}
+		}
+		.u1{
+			border-width: 0em;
+			box-shadow: inset 0 0  20px 0 rgba(0,0,0,0.4),0 0 20px 0 rgba(141,221,217);
+
+		}
+
+	 
+  </style>
+</head>
+<body>
+<section>
+	
+	
+<nav class="navbar navbar-expand-lg navbar-expand-md">
+  <div class="container">
+	<a class="navbar-brand" href="#"><img src="tickitbrand.jpg" >
+	<b>TICK IT</b></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+	  <span class="navbar-toggler-icon text-dark"><i class="fa-solid fa-bars"></i></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav ml-auto">
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#hotel" onclick="showhotels()">
+			  <img src="HOTEL.png" alt="Hotels Logo">
+
+			  Hotels
+			</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#bus" onclick="showbuses()">
+			  <img src="bus2.png" alt="Bus Logo">
+			  Bus
+			</a>
+		  </li>
+		
+		<li class="nav-item">
+			<a class="nav-link" href="#cab" onclick="showcabs()" >
+			  <img src="cab.png" alt="Cabs Logo">
+			  Cabs
+			</a>
+		  </li>
+		 
+		  <li class="nav-item">
+			<a class="nav-link" href="about.php" >
+				<img src="w21.jpg" alt="man Logo">
+			About
+			</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" href="vishnu1.html" >
+			  <button type="submit" name="submit" class="btn btn-outline-success" >Log In</button>
+			
+			</a>
+		  </li>
+		
+	  </ul>
+	</div>
+  </div>
+</nav>
+<hr>
+
+<div id="cab" class="carousel slide" data-ride="carousel" style="display: none;">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="cabimage.jpg" class="d-block w-100" alt="Single Image">
+			<div class="carousel-caption d-none d-md-block">
+				<button class="btn btn-primary" id="bookCabButton">Book Your Cab</button>
+			</div>
+		</div>
+	</div>
+	
+	<h1 class="secondary">Tick It Taxis Terms & Conditions</h1>
+	
+    <ul>
+        <li>No need to pay Toll Tax, State Tax or other similar taxes to the driver (for all-inclusive bookings)</li>
+        <li>Parking charges, Airport Entry Charges, if applicable, are excluded and will have to be paid directly to the driver</li>
+        <li>Once you exceed the km limit for your trip, you shall be charged at Rs.10/km</li>
+        <li>Between 09:00 PM to 6:00 AM, an additional night charge (Rs.250/night) will be applicable. These charges to be paid directly to the driver</li>
+        <li>Waiting charges would be applicable after the cab reaches the boarding point. The first 15 minutes are free but post that the charge is Rs.2 per minute and this amount has to be paid to the driver directly.</li>
+        <li>In case of partial payment, the balance payment of trip needs to be paid in advance at the time of pick-up</li>
+        <li>You need to collect the receipts from driver for any toll tax, state tax, night charges or extra km paid directly to the driver during the trip. AHA is not liable to provide invoices for such amount</li>
+        <li>Any grievances or claims related to the cab travel should be reported to AHA within 24 hours of travel time</li>
+        <li>The booking will be for cab type SEDAN and we do not commit on providing any preferred cab model (Dzire, Etios or similar)</li>
+        <li>AC will be switched off in hilly areas</li>
+        <li>You can accommodate 1 bag in Hatchback, 2 bags in Sedan and 3 bags in SUV</li>
+        <li>We do not commit on particular fuel type vehicle like Petrol, Diesel or CNG.Cab will be provided on the basis of availability.</li>
+        <li>You are not allowed to take pets with you inside the cab</li>
+        <li>Due to traffic or any other unavoidable reason, pickup may be delayed by 30 mins</li>
+        <li>Driver details will be shared up to 2 hour prior to departure.</li>
+        <li>You are solely responsible for managing your own travel schedule. AHA Taxis will not be liable for any compensation</li>
+    </ul>
+	<div class="one">
+    <h1>Aha Cancellation Policy</h1>
+    <ul>
+        <li>Free cancellation till 24 hours before departure</li>
+        <li>AHA Taxis (AHA) will not be held responsible for any cancellation or delay of service in case of any natural calamity, agitation or strike, traffic jam or road blockage, etc.</li>
+        <li>AHA reserves the right to cancel or change the booking of a vehicle at any point</li>
+        <li>Any modifications/amendments to the booking are not allowed</li>
+        <li>In the event of cancellation of a cab trip, AHA's liability will be limited only to the extent of refunding the sum paid by the passenger for the price of the e-ticket</li>
+    </ul>
+
+    <h1>Via.com Terms & Conditions</h1>
+    <ul>
+        <li>All cab booking related queries will be handled by AHA Taxis</li>
+        <li>Any legal issues raised for cab booking will be handled by AHA taxis</li>
+        <li>Via.com is not responsible for any booking related issues.</li>
+        <li>Terms and conditions of Via.com will be applicable</li>
+        <li>Flat 7% discount on cab booking on AHA taxis. Use Code AHAVIA</li>
+    </ul>
+	
+	
+	</div>
+</div>
+
+
+  
+  
+
+<div id="hotel" class="carousel slide size" data-ride="carousel"  >
+	
+	<!-- Indicators -->
+	<ul class="carousel-indicators">
+	<li data-target="#hotel" data-slide-to="0" class="active"></li>
+	<li data-target="#hotel" data-slide-to="1"></li>
+	<li data-target="#hotel" data-slide-to="2"></li>
+	</ul>
+	
+	<!-- Slides -->
+	<div class="carousel-inner">
+	<div class="carousel-item active">
+	<img src="https://images.via.com/static/img/emailers/agent/2023/Hotel/Hotel_Shilton.jpeg" alt="Image 1">
+	<div class="carousel-caption">
+	<div class="row">
+	<div class="col-6">
+	<div class="container mt-5">
+	<form action="hotel2.php" method="POST" id="hotel-form">
+	<div class="form-group">
+	<b align="center">Destination</b>
+	<input type="text" class="form-control" id="destination" name="destination" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Enter City,Area or Hotel Name" required>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="checkin">Check-in</label>
+	<input type="date" class="form-control" name="checkin" id="checkin">
+	<span id="inerror">inerror</span>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="checkout">Check-out</label>
+
+	<input type="date" class="form-control" name="checkout" id="checkout">
+	<span id="outerror">outerror</span>
+	</div>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="rooms">Rooms</label>
+	<input type="number" class="form-control" name="rooms" id="rooms" min="1" pattern="^[0-9]{1,2}$" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="guests">Guests</label>
+	<input type="number" class="form-control" name="guests" id="guests" min="1" pattern="^[0-9]{1,2}$" required>
+	</div>
+	</div>
+	
+	<div class="form-group">
+	<label for="nationality">Nationality</label>
+	<input type="text" class="form-control" name="nationality" id="nationality" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Nationality" required>
+	</div>
+	<div class="form-group">
+	<label for="residence">Residence</label>
+	<input type="text" class="form-control" name="residence" id="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+	</div>
+	<button type="submit" id="sub" class="btn btn-primary">Search hotel</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	
+	
+	</div>
+	</div>
+	<div class="carousel-item">
+		<img src="https://images.via.com/static/img/emailers/agent/2023/Hotel/The_Fern_Residency_Jaipur-b2b.jpeg" alt="Image 2">
+		<div class="carousel-caption">
+		<div class="row">
+		<div class="col-6">
+		<div class="container mt-5">
+		<form action="hotel2.php" method="POST">
+		<div class="form-group">
+		<b align="center">Destination</b>
+		<input type="text" class="form-control" id="destination" name="destination" pattern="^[A-Za-z\s]{3,50}$"  placeholder="Enter City,Area or Hotel Name" required>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		<label for="checkin">Check-in</label>
+		<input type="date" class="form-control" name="checkin" id="checkin" pattern="^[0-9]{1,2}$" required>
+		</div>
+		<div class="form-group col-md-6">
+		<label for="checkout">Check-out</label>
+		<input type="date" class="form-control" name="checkout" id="checkout" pattern="^[0-9]{1,2}$" required>
+		
+		</div>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		<label for="rooms">Rooms</label>
+		<input type="number" class="form-control" name="rooms" id="rooms" min="1" required>
+		</div>
+		<div class="form-group col-md-6">
+		<label for="guests">Guests</label>
+		<input type="number" class="form-control" name="guests" id="guests" min="1" required>
+		</div>
+		</div>
+		
+		<div class="form-group">
+		<label for="nationality">Nationality</label>
+		<input type="text" class="form-control" name="nationality" id="nationality" pattern="^[A-Za-z\s]{3,50}$" placeholder="Nationality" required>
+		</div>
+		<div class="form-group">
+		<label for="residence">Residence</label>
+		<input type="text" class="form-control" name="residence" id="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+		</div>
+		<button type="submit" class="btn btn-primary">Search hotel</button>
+		</form>
+		</div>
+		</div>
+		</div>
+		
+		
+		</div>
+		</div>
+		
+	
+	<div class="carousel-item">
+	<img src="https://images.via.com/static/img/general/20_percent_b2c.jpeg" alt="Image 3">
+	<div class="carousel-caption">
+	<div class="row">
+	<div class="col-6">
+	<div class="container mt-5">
+	<form action="hotel2.php" method="POST" >
+	<div class="form-group">
+	<b align="center">Destination</b>
+	<input type="text" class="form-control" id="destination" name="destination"  placeholder="Enter City,Area or Hotel Name" pattern="^[A-Za-z\s]{3,50}$" required>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="checkin">Check-in</label>
+	<input type="date" class="form-control" id="checkin" name="checkin" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="checkout">Check-out</label>
+	<input type="date" class="form-control" id="checkout" name="checkout" required>
+	
+	</div>
+	</div>
+	<div class="form-row">
+	<div class="form-group col-md-6">
+	<label for="rooms">Rooms</label>
+	<input type="number" class="form-control" id="rooms" name="rooms" min="1" required>
+	</div>
+	<div class="form-group col-md-6">
+	<label for="guests">Guests</label>
+	<input type="number" class="form-control" id="guests" name="guests" min="1" required>
+	</div>
+	</div>
+	
+	<div class="form-group">
+	<label for="nationality">Nationality</label>
+	<input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality" pattern="^[A-Za-z\s]{3,50}$" required>
+	</div>
+	<div class="form-group">
+	<label for="residence">Residence</label>
+	<input type="text" class="form-control" id="residence" name="residence" placeholder="Residence" pattern="^[0-9 A-Z a-z-\s]{3,50}$" required>
+	</div>
+	<button type="submit" class="btn btn-primary">Search hotel</button>
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<!-- Controls -->
+	<a class="carousel-control-prev" href="#hotel" role="button" data-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#hotel" role="button" data-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+	</a>
+	</div>
+	
+	
+	
+	
+
+
+
+	  <div id="bus" class="carousel slide" data-ride="carousel"  style="display: none;">
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+		  <li data-target="#bus" data-slide-to="0" class="active"></li>
+		  <li data-target="#bus" data-slide-to="1"></li>
+		  <li data-target="#bus" data-slide-to="2"></li>
+		</ul>
+
+
+
+
+
+
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="https://images.via.com/static/img/general/Flat_off_Bus.jpeg" alt="Image 1">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php">
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" pattern="[A-Z a-z \s]+" placeholder="Enter your name" required >
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" pattern="[A-Z a-z\- 0-9 \s]+" placeholder="Enter your address" required>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+"  required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations"list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)">
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="https://images.via.com/static/img/general/Flat_off_Bus.jpeg"  alt="Image 2">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php" >
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" pattern="[A-Z a-z \s]+" requird>
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" pattern="[A-Z a-z\- 0-9 \s]+" reqired>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations" list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)" required>
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="https://images.via.com/static/img/general/Tirupati-Balaji-Darshan-B2C-Banner.jpeg"  alt="Image 3">
+			  <div class="carousel-caption">
+				<div class="row">
+				   <div class="col-6">
+			   <div class="container mt-5">
+				   <h4 class="text-light">Book Your Buses Now!</h4>
+				   <form class="bg-info" method="POST" action="bus.php" >
+						<div class="form-group">
+				   <label for="name" >Name</label>
+				   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" pattern="[A-Z a-z \s]+">
+			   </div>
+			   <div class="form-group">
+				   <label for="address" >Address</label>
+				   <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" pattern="[A-Z a-z\- 0-9 \s]+" required>
+			   </div>
+			
+					   <div class="row">
+						   <div class="col-6">
+					   <div class="form-group">
+						   
+						   <label for="source" >Source</label>
+						   <input type="text" id="source" name="source" placeholder="Enter the source location" list="sourceOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="sourceOptions">
+							   <option value="United States">
+							   <option value="Australia">
+							   <option value="New Zealand">
+							   <!-- Add more source options as needed -->
+						   </datalist>
+						   </div>
+						   </div>
+						   
+					   <div class="col-6">
+						   
+					   <div class="form-group">
+						   <label for="destination"  >Destination</label>
+						   <input type="text" id="destination" name="destination" placeholder="Enter the destination locations"list="destinationOptions" class="form-control" pattern="[A-Z a-z \s]+" required>
+						   <datalist id="destinationOptions">
+							   <option value="India">
+							   <option value="Switzerland">
+							   <option value="England">
+		   
+		   
+							   <!-- Add more destination options as needed -->
+		   
+							  </datalist>
+					   </div>
+					   </div>
+					   </div>
+					   <hr>
+					   <div class="form-group">
+						   <label for="departure">Departure Date</label>
+						   <input type="text" id="departure" name="departure" class="form-control" required onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Enter the departure date (dd/mm/yyyy)">
+					   </div>
+		   
+					   <button type="submit" class="btn btn-primary float-right">Search Buses</button>
+				   </form>
+	   
+				   
+	   
+		 
+	   </div>
+	   </div>
+	   </div>
+				
+			   </div>
+			</div>
+		  </div>
+		  <a class="carousel-control-prev" href="#bus" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#bus" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+	  
+	<section style="margin-bottom: 20px;">
+		
+			<div class="container image">
+				<h4><i>Top Holiday Recommendations </i></h4>
+				<div class="destination-list">
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZvoW_y9uAAxXxU2wGHZFsDwoQFnoECBoQAQ&url=https%3A%2F%2Fwww.holidify.com%2Fstate%2Fhimachal-pradesh%2Ftop-destinations-places-to-visit.html&usg=AOvVaw17q80NfNAQTAEVyYsg33jI&opi=89978449" class="destination-link" target="_blank">
+							<img src="himachal.png" alt="Destination 1" class="destination-img" >
+							<div class="destination-caption">Himachal</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjT17bD0duAAxWFSWwGHYJACzwQFnoECB0QAQ&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fgoa%2F&usg=AOvVaw2N3DdX20VpPCGY-0cLvzZq&opi=89978449" class="destination-link" target="_blank">
+							<img src="goa.jpg" alt="Destination 2" class="destination-img">
+							<div class="destination-caption">Goa</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjsx8eA0tuAAxWzcmwGHRFoCO8QFnoECC4QAQ&url=https%3A%2F%2Fwww.holidify.com%2Fstate%2Fjammu-and-kashmir%2F&usg=AOvVaw1VMdLkMank3Q8UBD2DPspx&opi=89978449" class="destination-link" target="_blank">
+							<img src="Kashmir.jpg" alt="Destination 3" class="destination-img ">
+							<div class="destination-caption">Kashmir</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="" class="destination-link" target="_blank">
+							<img src="Northeast.png" alt="Destination 4" class="destination-img">
+							<div class="destination-caption">Northeast</div>
+						</a>
+					</div>
+					<!-- Second row of images -->
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjSl8nMzduAAxX9a2wGHYIZCg8QFnoECBsQAQ&url=https%3A%2F%2Ftraveltriangle.com%2Fblog%2Fplaces-to-visit-in-maldives%2F&usg=AOvVaw3Ebs7sYbvNs6NQgOa8ftiq&opi=89978449" class="destination-link" target="_blank">
+							<img src="Maldives.png" alt="Destination 5" class="destination-img">
+							<div class="destination-caption">Maldives</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjps6OMz9uAAxWkTGwGHb0_C0IQFnoECCMQAQ&url=https%3A%2F%2Fwww.tripadvisor.in%2FAttractions-g188045-Activities-Switzerland.html&usg=AOvVaw2OiFRoHHA6KKl0O5gblGa_&opi=89978449" class="destination-link" target="_blank">
+							<img src="Switzerland.png" alt="Destination 6" class="destination-img">
+							<div class="destination-caption">Switzerland</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj55Ouc0tuAAxVNSmwGHRYxBX8QFnoECBsQAw&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fdubai%2Fsightseeing-and-things-to-do.html&usg=AOvVaw2IhnWQcaYNaIwQvFq6udR5&opi=89978449" class="destination-link" target="_blank">
+							<img src="Dubai.png" alt="Destination 7" class="destination-img">
+							<div class="destination-caption">Dubai</div>
+						</a>
+					</div>
+					<div class="destination-item">
+						<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjB-7eL0duAAxWWXWwGHfw2B2oQFnoECDEQAQ&url=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fmanali%2Fsightseeing-and-things-to-do.html&usg=AOvVaw2xoqe7iq3Igxg12Gy0Su3-&opi=89978449" class="destination-link" target="_blank">
+							<img src="Srilanka.png" alt="Destination 8" class="destination-img">
+							<div class="destination-caption">Manali</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		
+		
+				<div class="image-container md-5 ">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZP7vs5TuxSP79ap8mXVVn8WJumHgJDMHs7Q&usqp=CAU" alt="Travel Image" class="one">
+					<div class="image-text"><h4><i>Advantages with Tick It</i></h4></div>
+					<div class="options-overlay">
+						<div class="option">
+							<img src="vishnu2.jpeg" alt="Cab Icon" class="option-icon rounded-pill">
+							<div>Go throgh exciting offers by booking cabs <br> through TICKIT </div>
+						</div>
+						<div class="option">
+							<img src="bus3.jpeg" alt="Bus Icon" class="option-icon rounded-pill">
+							<div >Book your most comfortable and for happy journey <br> book your buses through TICKIT</div>
+						</div>
+						<div class="option">
+							<img src="HOTEL2.jpeg" alt="Hotel Icon" class="option-icon rounded-pill">
+							<div >hurry up!book your hotels for best prices</div>
+						</div>
+					</div>
+				</div>
+		
+		
+				<header>
+					<h1>Customer Reviews</h1>
+				  </header>
+				  <div class="review-container">
+					<div class="review-card">
+					  <img src="s2.jpeg" alt="Customer Photo">
+					  <div class="review-content">
+						<p>Great experience with the hotel bookings. It was helpful to book tickets easily.</p>
+						<p class="reviewer">- Venkatesh</p>
+					  </div>
+					</div>
+					<div class="review-card ">
+						<img src="data:image/jpeg;base64,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" alt="Customer Photo">
+						<div class="review-content">
+						  <p>It was an honour to to book through this site</p>
+						  <p class="reviewer">- Alexa</p>
+						</div>
+					  </div>
+				   
+				
+				  <div class="review-card ">
+					  <img src="s3.jpeg" alt="Customer Photo">
+					  <div class="review-content">
+						<p>since we are facing some problems need to improve the page for more features</p>
+						<p class="reviewer">- Thomson</p>
+					  </div>
+					</div>
+					<div class="review-card ">
+						<img src="s4.jpeg" alt="Customer Photo">
+						<div class="review-content">
+						  <p>Smooth bus journey. Arrived on time at my destination.</p>
+						  <p class="reviewer">- Michael Johnson</p>
+						</div>
+					  </div>
+					  <div class="review-card ">
+						<img src="s7.jpeg" alt="Customer Photo">
+						<div class="review-content">
+						  <p>great experiencet .</p>
+						  <p class="reviewer">- Johnson</p>
+						</div>
+					  </div>
+					  <div class="review-card ">
+						<img src="s8.jpeg" alt="Customer Photo">
+						<div class="review-content">
+						  <p>It was good on booking through this sight</p>
+						  <p class="reviewer">- John</p>
+						</div>
+					  </div>
+				  </div>
+			
+		
+		
+		</section>	
+		
+			
+<section>
+		
+		
+				<div style="text-align: center; padding: 20px;" style="background-color: aqua;">
+					<footer>
+						<h4>Follow us on social media</h4>
+						<div class="social-icons">
+							<a href="https://www.facebook.com" target="_blank">
+								<img src="facebook-icon.png" alt="Facebook" width="70px" height="70px" style="margin-right: 40px;">
+							</a>
+							<a href="https://www.twitter.com" target="_blank">
+								<img src="twitter-icon.png" alt="Twitter" width="70px" height="70px" style="margin-right: 40px;">
+							</a>
+							<a href="https://www.instagram.com" target="_blank">
+								<img src="instagram-icon.jpeg" alt="Instagram" width="70px" height="70px">
+							</a>
+						</div>
+						<p>&copy; 2023 YourWebsite.com. All rights reserved.</p>
+					</footer>
+				</div>
+				
+			
+	
+		
+		
+
+	</section>
+	
+	
+
+	
+		
+
+	
+
+	<link rel="stylesheet" href="path/to/bootstrap.min.css">
+	<script src="path/to/jquery.min.js"></script>
+	<script src="path/to/bootstrap.min.js"></script>
+	
+
+		
+		
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+
+  
+
+	
+  <script>
+	// Enable auto-sliding for the carousel
+	$(document).ready(function(){
+	$('#cab').carousel({
+	interval: 3000 // Change the time (in milliseconds) between slides
+	});
+	});
+	</script>
+	<script>
+		// Enable auto-sliding for the carousel
+		$(document).ready(function(){
+		$('#hotel').carousel({
+		interval: 3000 // Change the time (in milliseconds) between slides
+		});
+		});
+		</script>
+		<script>
+			// Enable auto-sliding for the carousel
+			$(document).ready(function(){
+			$('#bus').carousel({
+			interval: 3000 // Change the time (in milliseconds) between slides
+			});
+			});
+			</script>
+<script>
+	
+
+function showcabs() {
+	document.getElementById('cab').style.display = 'block';
+	document.getElementById('hotel').style.display = 'none';
+	document.getElementById('bus').style.display = 'none';
+
+
+}
+function showhotels() {
+	document.getElementById('cab').style.display = 'none';
+	document.getElementById('hotel').style.display = 'block';
+	document.getElementById('bus').style.display = 'none';
+
+
+}
+function showbuses() {
+	document.getElementById('cab').style.display = 'none';
+	document.getElementById('hotel').style.display = 'none';
+	document.getElementById('bus').style.display = 'block';
+
+
+}
+</script>
+<script>
+function validate(){
+	var ci=document.getElementById("checkin").value;
+	var co=document.getElementById("checkout").value;
+	var cie=document.getElementById("inerror").value;
+	var coe=document.getElementById("outerror").value;
+	var c=false;
+	var date=new Date();
+	var d=date.getDate();
+	var f=date.getUTCMonth();
+	var y=date.getFullYear();
+	var fd=y+"-"+f+"-"+d;
+	var z=typeof(ci);
+	//alert(ci+" "+co);
+	if(ci <= co){
+	
+		c=true;
+	}
+	else{
+		coe.innerText="date invalid";
+	}
+	return c;
+
+}
+var sub=document.getElementById("sub");
+sub.addEventListener("click",event=>{
+	if(!validate()){
+	}
+})
+
+
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const bookCabButton = document.getElementById("bookCabButton");
+
+		bookCabButton.addEventListener("click", function() {
+			// Open a new window/tab with the card-style form
+			//const newWindow = window.open("");
+			//const formContent = document.getElementById("formCard").innerHTML;
+			//newWindow.document.write(formContent);
+
+			window.location.assign("project2sub1.php");
+		});
+	});
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
